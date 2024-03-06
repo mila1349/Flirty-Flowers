@@ -11,6 +11,11 @@ function Header() {
       linesClass: "lineChildren"
     })
 
+    const splitParent = new SplitText("#header-text",{
+      type:"lines",
+      linesClass: "lineParent"
+    })
+
     gsap.to(splitText.lines, {y:0, opacity:1, duration:1, stagger:0.1, ease:'power2' })
   },[])
 
